@@ -7,33 +7,33 @@ import org.openqa.selenium.By;
 public class Task3LoginScenario {
 
 	public static void main(String[] args) {
-		// Путь к вспомогательному файлу
+		// Path for GeckoDriver
 		System.setProperty("webdriver.gecko.driver","C:\\Users\\mrsqu\\Documents\\GitHub\\FirefoxWebDriver\\geckodriver.exe");
     	
-		// Инициализация драйвера
+		// WebDrver Initialization
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		// Переход по адресу http://localhost/litecart/admin
+		// Go to http://localhost/litecart/admin
 		driver.get("http://localhost/litecart/admin");
 		
-		// Поиск элемента и ввод имени пользователя
+		// Search for element username
 		WebElement username = driver.findElement(By.name("username"));
 		username.sendKeys("admin");
 		
-		// Поиск элемента и ввод пароля
+		// Search for element password
 		WebElement password = driver.findElement(By.name("password"));
 		password.sendKeys("admin");
 		
-		// Нажатие на кнопку для входа
+		// Click login button
 		WebElement login = driver.findElement(By.name("login"));
 		login.click();		
 		
-		// Выход из панели администратора
+		// Click logout button
 		WebElement logout = driver.findElement(By.xpath("/html/body/div/div/div/table/tbody/tr/td[1]/div[2]/a[5]"));
 		logout.click();
 		
-		// Закрытие браузера и драйвера
+		// Close WebDriver
 		driver.quit();
 	}
 
