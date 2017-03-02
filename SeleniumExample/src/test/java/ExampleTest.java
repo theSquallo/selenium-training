@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  */
 public class ExampleTest {
     public static void main(String[] args) {
-    	System.setProperty("webdriver.gecko.driver","C:\\Users\\mrsqu\\Documents\\GitHub\\FirefoxWebDriver\\geckodriver.exe");
+    	//System.setProperty("webdriver.gecko.driver","C:\\Users\\mrsqu\\Documents\\GitHub\\FirefoxWebDriver\\geckodriver.exe");
     	WebDriver driver = new FirefoxDriver();
     	driver.get("https://google.com");
     	WebElement element = driver.findElement(By.name("q"));

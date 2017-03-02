@@ -8,7 +8,7 @@ public class Task3LoginScenario {
 
 	public static void main(String[] args) {
 		// Path for GeckoDriver
-		System.setProperty("webdriver.gecko.driver","C:\\Users\\mrsqu\\Documents\\GitHub\\FirefoxWebDriver\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver","C:\\Users\\mrsqu\\Documents\\GitHub\\FirefoxWebDriver\\geckodriver.exe");
     	
 		// WebDrver Initialization
 		WebDriver driver = new FirefoxDriver();
